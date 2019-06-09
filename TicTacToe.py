@@ -2,18 +2,11 @@ import pygame
 import random
 from time import sleep
 
-#To do list
-#scale up to more levels
-#Moving Player
-#Enemies and follow player
-#player can attack Enemies
-
 pygame.init()
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREY = (200, 200, 200)
 BLACK = (0, 0, 0)
-#def room(x_size, y_size, objects):
 B = 0
 X = 1
 O = 2
@@ -80,8 +73,8 @@ def main():
                 if tilemap[row][column] == B:
                     rectangle[row][column] = pygame.draw.rect(screen, WHITE, (216*row, 216*column, 211, 211))
                 #elif tilemap[row][column] == X:
-                    #draw an X nerd
-                #    pass
+                    #draw an X
+                #pass
                 elif tilemap[row][column] == O:
                     rectangle[row][column] = pygame.draw.rect(screen, WHITE, (216*row, 216*column, 211, 211))
                     pygame.draw.circle(screen, BLACK, (((216*row)+108),((216*column)+108)), 100)
